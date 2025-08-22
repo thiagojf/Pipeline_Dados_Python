@@ -3,7 +3,7 @@ from datetime import datetime
 import pandas as pd
 
 
-def get_biticoin_df():
+def get_bitcoin_df():
         #URL API BITCOIN
         url = "https://api.coinbase.com/v2/prices/spot"
 
