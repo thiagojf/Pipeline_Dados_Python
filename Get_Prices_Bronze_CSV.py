@@ -7,8 +7,8 @@ import pandas as pd
 from Get_Bitcoin import get_bitcoin_df
 from Get_Commodities import get_commodities_df
 
-SLEEP_SECONDS = 120
-CSV_PATH = "GET_PRICES_BRONZE_DATA.csv"
+SLEEP_SECONDS = 300
+CSV_PATH = "Database\\1_Bronze\\GET_PRICES_BRONZE_DATA.csv"
 
 if __name__ == "__main__":
     # Se quiser garantir cabeçalho na primeira execução, crie o arquivo vazio com header:
@@ -28,7 +28,7 @@ if __name__ == "__main__":
         # Salva (append sem cabeçalho)
         df.to_csv(CSV_PATH, mode="a", header=False, index=False)
 
-        print("✅ Cotações inseridas no banco com sucesso!")
+        print("✅ Importado cotações!")
         
         # Espera próximo ciclo
         time.sleep(SLEEP_SECONDS)
