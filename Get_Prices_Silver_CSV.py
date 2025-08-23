@@ -60,7 +60,7 @@ df_unificado = pd.concat([df_btc, df_commodities], ignore_index=True, sort=False
 df_unificado["data_hora"] = pd.to_datetime(df_unificado["data_hora"], errors="coerce")
 
 # 6.1. Arredondar para a hora cheia (truncar minutos/segundos)
-df_unificado["data_hora"] = df_unificado["data_hora"].dt.floor("h")
+df_unificado["data_hora_trunc"] = df_unificado["data_hora"].dt.floor("h")
 
 # 7. Salvar o DataFrame unificado em um novo CSV
 df_unificado.to_csv(output_file, index=False)
