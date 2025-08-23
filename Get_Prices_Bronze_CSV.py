@@ -7,7 +7,7 @@ import pandas as pd
 from Get_Bitcoin import get_bitcoin_df
 from Get_Commodities import get_commodities_df
 
-SLEEP_SECONDS = 300
+SLEEP_SECONDS = 3600
 CSV_PATH = "Database\\1_Bronze\\GET_PRICES_BRONZE_DATA.csv"
 
 if __name__ == "__main__":
