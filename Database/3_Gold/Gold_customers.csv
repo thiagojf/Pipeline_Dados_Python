@@ -1,0 +1,13 @@
+customer_id,customer_name,documento,segmento,pais,estado,cidade,created_at
+C001,da Cunha,76.095.341/0001-50,Financeiro,Brasil,GO,Carvalho,2023-04-16 13:32:08+00:00
+C002,Câmara,10.879.364/0001-47,Indústria,Brasil,AP,Garcia de Minas,2023-11-04 01:02:08+00:00
+C003,Camargo Andrade - ME,03.658.214/0001-48,Varejo,Brasil,RO,da Cunha,2023-05-08 17:43:26+00:00
+C004,Sales Guerra Ltda.,87.965.410/0001-55,Financeiro,Alemanha,MS,Teixeira,2024-04-21 06:54:18+00:00
+C005,Fernandes,47.639.021/0001-15,Tecnologia,Brasil,MS,Lopes do Amparo,2024-08-21 23:09:36+00:00
+C006,Andrade da Mota - ME,28.360.597/0001-02,Tecnologia,Estados Unidos,AC,Abreu,2023-08-19 02:48:55+00:00
+C007,Aragão,12.986.074/0001-28,Financeiro,Brasil,AL,Cavalcanti,2024-06-22 16:51:55+00:00
+C008,Mendes S.A.,84.967.512/0001-11,Financeiro,Brasil,RN,Pimenta do Norte,2023-07-28 10:18:45+00:00
+C009,Carvalho e Filhos,86.749.532/0001-41,Varejo,Alemanha,GO,Azevedo,2023-06-05 10:55:32+00:00
+C010,Borges,30.149.267/0001-06,Tecnologia,Brasil,DF,Borges do Amparo,2023-03-17 02:10:34+00:00
+C011,Thiago,30.149.267/0009-87,Tecnologia,Brasil,MG,Juiz de Fora,2023-08-25 14:10:34+00:00
+C012,Fontes e Arrabal,25.698.627/0001-89,Tecnologia,Brasil,MG,Juiz de Fora,2023-08-25 14:15:55+00:00
