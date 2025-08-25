@@ -58,9 +58,9 @@ project/
 * Script orquestrador que combina os resultados de **GetBitcoin** e **GetCommodities**.
 * Três variações disponíveis:
 
-  1. **Execução única** — junta e imprime o DataFrame.
-  2. **Loop infinito** — coleta e imprime a cada 3600 segundos.
-  3. **Loop infinito com salvamento** — coleta e imprime a cada 3600 segundos. e **salva/append** em um arquivo CSV consolidado (`GET_PRICES_BRONZE_DATA.csv`).
+  1. **Execução única** — junta e imprime o DataFrame e escreve cabeçalho apenas uma vez.
+  2. **Loop** — coleta dos dados a cada 3600 segundos.
+  3. **salva/append** em um arquivo CSV consolidado (`GET_PRICES_BRONZE_DATA.csv`).
 
 ### **Lista de camadas** 
 
@@ -87,6 +87,21 @@ python Get_Prices_Gold_CSV.py
 
 ---
 
+## **🚫 Arquivos Ignorados pelo Git**
+
+O projeto inclui um arquivo **`.gitignore`** para evitar que arquivos temporários, dados brutos ou informações sensíveis sejam versionados.  
+
+Principais regras:
+
+- **Sistemas operacionais:** `.DS_Store`, `Thumbs.db`  
+- **Python:** `__pycache__/`, arquivos `.pyc`, `.env`  
+- **Jupyter:** `/Notebooks_Desenv/`  
+- **Logs:** arquivos `.log` ou `.out`  
+- **Configurações de IDE:** `.vscode/`, `.idea/`, `.sublime-*`  
+
+Isso mantém o repositório limpo e seguro.
+
+---
 ### **Notas** 
 
 Todas as datas em UTC e truncadas por hora para facilitar o merge.
