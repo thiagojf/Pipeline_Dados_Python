@@ -7,7 +7,7 @@ project/\
 ├── Database/\
 │ ├── 1_Bronze/\
 │ ├── 2_Silver/\
-│ └── 3_Gold/\
+│ ├── 3_Gold/\
 │ └── 4_Reports/\
 ├── Get_Bitcoin.py\
 ├── Get_Commodities.py\
