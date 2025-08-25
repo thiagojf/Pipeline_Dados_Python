@@ -64,16 +64,16 @@ project/
 
 ### **Lista de camadas** 
 
-**1_Bronze/**: dados brutos coletados (API Bitcoin, Yahoo Finance, Sales CSVs)
-**2_Silver/**: dados tratados e formatados (preço em USD/BRL, data truncada)
-**3_Gold/**: dados consolidados prontos para análise (merge vendas × preços, totais calculados)
+  1. **1_Bronze/**: dados brutos coletados (API Bitcoin, Yahoo Finance, Sales CSVs)
+  2. **2_Silver/**: dados tratados e formatados (preço em USD/BRL, data truncada)
+  3. **3_Gold/**: dados consolidados prontos para análise (merge vendas × preços, totais calculados)
+
 
 ---
 
 ### Como Executar
 
 1. **Instalar dependências**
-```bash
 pip install -r requirements.txt
 
 2. Coletar dados brutos (Bronze)
@@ -87,7 +87,7 @@ python Get_Prices_Gold_CSV.py
 
 ---
 
-### 📊 Notas
+### **Notas** 
 
 Todas as datas em UTC e truncadas por hora para facilitar o merge.
 Preços em USD e BRL, com colunas numéricas para cálculos e colunas formatadas para visualização.
