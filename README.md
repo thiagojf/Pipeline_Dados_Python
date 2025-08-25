@@ -62,27 +62,15 @@ project/
   2. **Loop infinito** — coleta e imprime a cada 3600 segundos.
   3. **Loop infinito com salvamento** — coleta e imprime a cada 3600 segundos. e **salva/append** em um arquivo CSV consolidado (`GET_PRICES_BRONZE_DATA.csv`).
 
-2. **Lista de camadas**: usar bullets consistentes e com descrição curta.
+### **Lista de camadas** 
 
-```markdown
-- **1_Bronze/**: dados brutos coletados (API Bitcoin, Yahoo Finance, Sales CSVs)
-- **2_Silver/**: dados tratados e formatados (preço em USD/BRL, data truncada)
-- **3_Gold/**: dados consolidados prontos para análise (merge vendas × preços, totais calculados)
-
-### Campos principais por camada
-
-**Bronze**
-| preco | ativo | moeda | horario_coleta |
-
-**Silver**
-| ativo | preco_usd | preco_brl | horario_coleta | data_hora_trunc |
-
-**Gold**
-| data_hora_trunc | produto | transaction_id | quantidade | tipo_operacao | cliente_id | data_hora | preco_usd | preco_brl | Total_usd | Total_brl |
+**1_Bronze/**: dados brutos coletados (API Bitcoin, Yahoo Finance, Sales CSVs)
+**2_Silver/**: dados tratados e formatados (preço em USD/BRL, data truncada)
+**3_Gold/**: dados consolidados prontos para análise (merge vendas × preços, totais calculados)
 
 ---
 
-## Como Executar
+### Como Executar
 
 1. **Instalar dependências**
 ```bash
@@ -99,7 +87,7 @@ python Get_Prices_Gold_CSV.py
 
 ---
 
-## 📊 Notas
+### 📊 Notas
 
 Todas as datas em UTC e truncadas por hora para facilitar o merge.
 Preços em USD e BRL, com colunas numéricas para cálculos e colunas formatadas para visualização.
