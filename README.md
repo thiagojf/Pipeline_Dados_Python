@@ -70,6 +70,27 @@ project/
 
 
 ---
+## 📊 Relatório de Data Quality (DQ)
+
+O projeto inclui um script para geração de **relatórios de qualidade dos dados**, garantindo que os dados das camadas **Silver** e **Gold** estejam consistentes antes de análises.
+
+### Como gerar o relatório:
+
+1. Execute o script:
+```bash
+python data_quality_report.py
+
+2. Os relatórios serão gerados na pasta: Database/4_Reports/\
+
+3. Cada relatório contém:
+
+Tipo de dados de cada coluna\
+Número de valores nulos\
+Número de duplicados\
+Estatísticas básicas (mínimo, máximo, média, desvio padrão) para colunas numéricas\
+
+Esses relatórios ajudam a identificar inconsistências, verificar integridade e garantir que os dados estejam prontos para análise na camada Gold.
+---
 
 ### Como Executar
 
