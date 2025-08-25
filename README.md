@@ -89,7 +89,6 @@ Número de valores nulos\
 Número de duplicados\
 Estatísticas básicas (mínimo, máximo, média, desvio padrão) para colunas numéricas\
 
-Esses relatórios ajudam a identificar inconsistências, verificar integridade e garantir que os dados estejam prontos para análise na camada Gold.
 ---
 
 ### Como Executar
