@@ -1,0 +1,6 @@
+,tipo,nulos,duplicados
+ativo,object,0,0
+preco_usd,object,0,0
+preco_brl,object,0,0
+horario_coleta,object,42,0
+data_hora_trunc,object,42,0

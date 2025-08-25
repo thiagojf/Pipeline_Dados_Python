@@ -1,0 +1,14 @@
+,tipo,nulos,duplicados,min,max,media,std
+transaction_id,object,0,0,,,,
+data_hora,object,0,0,,,,
+produto,object,0,0,,,,
+quantidade,float64,0,0,0.01,50.0,18.265657894736844,17.294615758324042
+tipo_operacao,object,0,0,,,,
+moeda,object,0,0,,,,
+cliente_id,object,0,0,,,,
+canal,object,0,0,,,,
+mercado,object,0,0,,,,
+arquivo_origem,object,0,0,,,,
+importado_em,object,0,0,,,,
+unidade,object,30,0,,,,
+data_hora_trunc,object,0,0,,,,
