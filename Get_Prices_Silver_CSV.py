@@ -27,8 +27,14 @@ df["preco_usd"] = df["preco"].map(lambda x: f"${x:,.2f}")
 cotacao_usd_brl = 5.50
 df["preco_brl"] = df["preco"].map(lambda x: f"R${x * cotacao_usd_brl:,.2f}")
 
+# Ajustar a coluna data_hora arredondando para hora
+df["horario_coleta"] = pd.to_datetime(df["horario_coleta"], errors="coerce")
+
+# Arredondar para a hora cheia (truncar minutos/segundos)
+df["data_hora_trunc"] = df["horario_coleta"].dt.floor("h")
+
 #Corrige a ordem correta dos campos
-df_final = df[["ativo", "preco_usd", "preco_brl", "horario_coleta"]]
+df_final = df[["ativo", "preco_usd", "preco_brl", "horario_coleta","data_hora_trunc"]]
 
  # Salva (append com cabeçalho)
 # Caminho relativo: sobe um nível, entra na pasta Database/Bronze
@@ -66,4 +72,4 @@ df_unificado["data_hora_trunc"] = df_unificado["data_hora"].dt.floor("h")
 df_unificado.to_csv(output_file, index=False)
 
 print("✅ Transformações executadas com sucesso!")
-print(f"\n✅ Arquivo unificado gerado com sucesso: {output_file}")
+print(f"\n✅ Arquivo unificado gerado com sucesso!")
