@@ -3,18 +3,19 @@
 Este projeto faz parte da **Fast Track Engenharia de dados** e tem como objetivo coletar, consolidar e salvar cotações em tempo real de **Bitcoin** e de **commodities** selecionadas, utilizando APIs públicas e a biblioteca `yfinance`.
 
 ## 📂 Estrutura do Projeto
-project/
-├── Database/
-│ ├── 1_Bronze/
-│ ├── 2_Silver/
-│ └── 3_Gold/
-├── Get_Bitcoin.py
-├── Get_Commodities.py
-├── Get_Prices_Bronze_CSV.py
-├── Get_Prices_Silver_CSV.py
-├── Get_Prices_Gold_CSV.py
-├── requirements.txt
-└── README.md
+project/\
+├── Database/\
+│ ├── 1_Bronze/\
+│ ├── 2_Silver/\
+│ └── 3_Gold/\
+│ └── 4_Reports/\
+├── Get_Bitcoin.py\
+├── Get_Commodities.py\
+├── Get_Prices_Bronze_CSV.py\
+├── Get_Prices_Silver_CSV.py\
+├── Get_Prices_Gold_CSV.py\
+├── requirements.txt\
+└── README.md\
 ---
 
 ## 📂 Estrutura do Projeto
