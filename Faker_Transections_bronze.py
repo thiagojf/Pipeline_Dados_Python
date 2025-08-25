@@ -17,6 +17,7 @@ np.random.seed(SEED)
 fake = Faker("pt_BR")
 
 OUT_DIR = Path("Database\\1_Bronze\\")
+OUT_DIR_GOLD = Path("Database\\3_Gold\\")
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Período: 2024-01-01 até hoje
@@ -198,7 +199,7 @@ def build_sales_commodities_sql(
 if __name__ == "__main__":
     print(">> Gerando customers...")
     df_customers = build_customers(NUM_CLIENTS)
-    df_customers.to_csv(OUT_DIR / "bronze_customers.csv", index=False)
+    df_customers.to_csv(OUT_DIR_GOLD / "Gold_customers.csv", index=False)
 
     print(">> Gerando sales_btc_excel (sem preço, com tipo_operacao)...")
     df_sales_btc = build_sales_btc_excel(df_customers)
