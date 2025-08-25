@@ -21,11 +21,11 @@ df["horario_coleta"] = pd.to_datetime(df["horario_coleta"]).dt.strftime("%d/%m/%
 df["preco"] = pd.to_numeric(df["preco"], errors="coerce")
 
 # 🔹 Preço em USD formatado
-df["preco_usd"] = df["preco"].map(lambda x: f"${x:,.2f}")
+df["preco_usd"] = df["preco"].map(lambda x: f"{x:,.2f}")
 
 # 🔹 Conversão para BRL
 cotacao_usd_brl = 5.50
-df["preco_brl"] = df["preco"].map(lambda x: f"R${x * cotacao_usd_brl:,.2f}")
+df["preco_brl"] = df["preco"].map(lambda x: f"{x * cotacao_usd_brl:,.2f}")
 
 # Ajustar a coluna data_hora arredondando para hora
 df["horario_coleta"] = pd.to_datetime(df["horario_coleta"], errors="coerce")
