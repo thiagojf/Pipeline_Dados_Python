@@ -1,0 +1,17 @@
+Documentação Biblioteca/API yfinance
+fonte: https://pypi.org/project/yfinance/
+
+# Necessario a importação da biblioteca yfinance
+import yfinance as yf
+
+# Definindo o ticker da ação desejada
+ticker_symbol = "MSFT"
+
+Crie um objeto Ticker
+ticker = yf.Ticker(ticker_symbol)
+
+#Obter dados históricos de mercado usando a tag "period"
+historical_data = ticker.history(period="1mo") 
+
+# Exibir um resumo dos dados obtidos
+print(historical_data[['Open', 'High', 'Low', 'Close', 'Volume']])

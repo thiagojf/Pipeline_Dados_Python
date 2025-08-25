@@ -1,0 +1,29 @@
+Documentação do endpoints API Coinbase
+fonte: https://docs.cdp.coinbase.com/coinbase-app/track-apis/prices
+
+Obtenha o preço de mercado atual para bitcoin. Isso geralmente está em algum lugar entre o preço de compra e venda.
+Você também pode obter preços históricos com parâmetro.date
+
+*** Esse ponto de extremidade não requer autenticação.
+
+Solicitação HTTP
+GET https://api.coinbase.com/v2/prices/:currency_pair/spot
+
+Argumentos
+Parameter: data
+Type: string	
+Required: Optional	
+Description: Para preço à vista histórico, use o formato (UTC)YYYY-MM-DD
+
+Exemplos
+Request
+curl https://api.coinbase.com/v2/prices/BTC-USD/spot \
+  -H 'Authorization: Bearer abd90df5f27a7b170cd775abf89d632b350b7c1c9d53e08b340cd9832ce52c2c'
+
+Response
+{
+  "data": {
+    "amount": "1015.00",
+    "currency": "USD"
+  }
+}
