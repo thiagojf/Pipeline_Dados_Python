@@ -77,7 +77,7 @@ O projeto inclui um script para geração de **relatórios de qualidade dos dado
 ### Como gerar o relatório:
 
 1. Execute o script:
-```bash
+
 python data_quality_report.py
 
 2. Os relatórios serão gerados na pasta: Database/4_Reports/\
